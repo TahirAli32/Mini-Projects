@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #929e9641; */
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.fa-check{
+    color: green;
+}
+.fa-x{
+    color: red;
+}
+.list-items{
+    padding-left: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.7);
+    height: 500px;
+    width: 350px;
+    margin: 0 15px; 
+    border-radius: 2px;
+    position: relative;
+}
+.triangle1{
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #0E1F30;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -11px;
+    left: -46px;
+    z-index: 100;
+}
+.triangle2{
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -21px;
+    left: -91px;
+}
+.shape{
+    color: white;
+    width: 140px;
+    height: 45px;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #0E1F30;
+    position: absolute;
+    top: 48px;
+    left: 0px;
+}
+.category{
+    color: white;
+    position: absolute;
+    font-weight: 400;
+    font-size: 22px;
+    top: 40px;
+    left: 38px
+}
+/* .shape::before{
+    content: "BASIC";
+    position: absolute;
+    top: -40px;
+    font-size: 25px;
+    left: 40px
+} */
+.price{
+    position: absolute;
+    font-size: 45px;
+    font-weight: 300;
+    color: #3A3A3A;
+    top: 60px;
+    left: 100px;
+}
+.top > p{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3A3A3A;
+    top: 140px;
+    left: 140px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.list-items{
+    color: #3A3A3A;
+    font-weight: 700;
+}
+.btn{
+    background-color: #041322;
+    color: white;
+    font-size: 16px;
+    padding: 10px 35px;
+    margin-top: 25px;
+    transition: all ease-in-out .3s;
+}
+.btn:hover{
+    color: #041322;
+    background-color: transparent;
+    border: 1px solid #041322;
+}
