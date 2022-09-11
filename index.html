@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <style>
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        .emptyErr{
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex mb-3 justify-content-between align-items-baseline">
+            <h2 class="text-center">Fill out the Form Below:</h2>
+            <h5 class="text-right"><a href="/admin.html">View as Admin</a></h5>
+        </div>
+        <div class="px-5 d-flex flex-column border py-3">
+            <label class="mt-1">Name:
+                <input type="text" id="name" class="form-control" placeholder="Enter Your Full Name">
+            </label>
+            <label class="mt-1">Email:
+                <input type="text" id="email" class="form-control" placeholder="Enter Your Address">
+            </label>
+            <label class="mt-1">Father Name:
+                <input type="text" id="fname" class="form-control" placeholder="Enter Your Father Name">
+            </label>
+            <label class="mt-1">Address:
+                <input type="text" id="address" class="form-control" placeholder="Enter Your Full Address">
+            </label>
+            <label class="mt-1">Mobile No:
+                <input type="number" id="mno" class="form-control" placeholder="Enter Your Mobile Number">
+            </label>
+            <label class="mt-1">Education:
+                <input type="text" id="edu" class="form-control" placeholder="Enter Your Education">
+            </label>
+            <button onclick="handleSubmit()" class="btn btn-outline-dark my-3">Submit Data</button>
+        </div>
+        <h3 id="formSubmit" class="d-none text-center mt-4 text-success">Form Successfully Submitted</h3>
+    </div>
+</body>
+</html>

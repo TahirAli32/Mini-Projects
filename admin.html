@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form - Admin Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <script>
+        window.addEventListener('load', () => {
+            handleAdmin()
+        })
+    </script>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="d-flex pb-3 border-bottom justify-content-between align-items-baseline">
+            <h2 class="text-center mb-3"><a href="/">Go Home</a></h2>
+            <h5 class="text-right mb-3">Viewing as Admin</h5>
+        </div>
+        <div class="mt-4">
+            <h2 class="mb-4">User Data</h2>
+            <table class="table border border-">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Father Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Mobile Number</th>
+                    <th scope="col">Education</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+                    <!-- Data is Populated using JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
