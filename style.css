@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@100;200;300;400&family=Josefin+Sans:wght@100;200;300;400&family=Philosopher:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: #ED1C24;
+    font-size: 40px;
+}
+.landing{
+    min-height: 1080px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 0, rgba(12, 0, 0, 0.3) 0), url("./assets/landingBg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+.logo{
+    padding: 10px 0 0 59px;
+}
+.nav-links{
+    display: flex;
+    font-family: 'Philosopher', sans-serif; 
+    color: white;
+    padding: 38px 0 0 68px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+}
+.right{
+    display: flex;
+}
+.nav-items{
+    padding: 0 15px;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+.nav-items:hover{
+    color: #ed1c24;
+}
+.btn{
+    display: flex;
+    background-color: #ed1c24;
+    width: 192px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin: 22px 65px;
+    cursor: pointer;
+}
+.btn > a{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 159px 0 0 0;
+}
+.hero > h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 100px;
+    letter-spacing: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.hero > h4{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 10px;
+    font-weight: 200;
+    padding-top: 7px;
+    text-transform: uppercase;
+}
+.hero > h3{
+    font-family: 'Philosopher', sans-serif; 
+    color: white;
+    font-size: 40px;
+    margin: 77px 0 0 0;
+    font-weight: 400;
+}
+.hero > p{
+    font-family: 'Dosis', sans-serif;
+    color: #E1E1E1;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 8px 0 0 0;
+}
+.types{
+    display: flex;
+    margin-top: 13px;
+}
+.types > .card{
+    background-color: #FFFFFFE0;
+    padding: 35px;
+    margin: 10px;
+    border-radius: 4px;
+    width: 226px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.red-hr{
+    border: 1px solid #ED1C24;
+}
+.location{
+    height: 88vh;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 0 0;
+}
+.logo-img{
+    padding-top: 35px;
+}
+.location > h3{
+    font-family: 'Philosopher', sans-serif; 
+    color: #ED1C24;
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+.location > p{
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    font-size: 17px;
+}
+.location >.cards{
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+.location > .cards > .card{
+    border: 3px solid white;
+    border-radius: 4px;
+    width: 370px;
+    height: 270px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.name{
+    color: white;
+    background-color: rgba(12, 0, 0, 0.45);
+    height: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.name > small{
+    font-size: 15px;
+    padding: 15px 15px;
+}
+.franchise{
+    padding-bottom: 50px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.franchise > h3{
+    padding-top: 105px;
+    font-family: 'Philosopher', sans-serif; 
+    color: #ED1C24;
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+.franchise > h2{
+    font-family: 'Dosis', sans-serif; 
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+.franchise > .cards{
+    display: flex;
+    margin-top: 45px;
+}
+.franchise > .cards > .card{
+    border: 3px solid white;
+    border-radius: 4px;
+    width: 370px;
+    height: 320px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.coming-soon-card{
+    margin-top: 30px;
+    /* background-color: rgb(177, 40, 63); */
+}
+.coming-soon{
+    border: 3px solid #ED1C24;
+    background-color: white;
+    border-radius: 4px;
+    width: 370px;
+    height: 180px;
+    margin: 10px 10px;
+}
+.coming-soon > .name{
+    background-color: transparent;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer{
+    padding-top: 50px;
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #E1E1E1;
+}
+.footer > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1.5rem 0.9rem;
+}
+.footer > div > h3{
+    font-size: 21px;
+    font-family: 'Philosopher', sans-serif; 
+}
+.footer > div > p, .items, .copyright > h3{
+    font-family: 'Dosis', sans-serif;     
+}
+.items{
+    padding: 5px;
+}
+.items:hover{
+    color: #ED1C24;
+    cursor: pointer;
+}
+.terms{
+    background-color: #222222;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.terms > div {
+    font-family: 'Dosis', sans-serif;     
+    display: flex;
+    padding: 0 10px;
+}
+.terms > div:hover{
+    color: #ED1C24;
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+    font-size: 14px;
+    color: #757575;
+    font-weight: 100;
+    padding: 10px 0;
+}
