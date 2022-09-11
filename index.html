@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mobile Inventory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0; 
+        }
+        body{
+            font-family: Poppins, 'san-serif';
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        #errorModal{
+            display: none;
+        }
+        .modal-header {
+            position: relative;
+            margin: 0 10rem;
+            padding: 15px 0;
+        }
+        .modal-header .btn-outline-info {
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+        .btn-outline-info:hover{
+            color: white;
+        }
+        .modal-header h4 {
+            text-align: center;
+            font-size: 26px;
+            margin-top: 15px;
+        }
+        .modal-header .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            padding: 15px 0;
+            border-radius: 50%;
+            z-index: 9;
+            color: #f15e5e;
+            text-align: center;
+            border: 3px solid #f15e5e;
+        }
+        .icon-box h2{
+            font-size: 35px;
+        }
+        .pointer{
+            cursor: pointer;
+        }
+        .dots{
+            display: flex;
+            justify-content: center;
+        }
+        .dot{
+            border: 1px solid rgba(83, 80, 80, 0.37);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            margin: 0 4px;
+        }
+        .price{
+            font-size: 21px;
+            font-weight: 600;
+        }
+        .price > span{
+            font-size: 24px;
+            font-weight: 700;
+            padding-left: 2px;
+        }
+        .none{
+            display: none !important;
+        }
+        .active{
+            color: #0355b4 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex flex-row justify-content-center my-3 w-100 flex-wrap">
+        <form>
+            <select id="companyList" class="mb-1 form-select w-auto mx-1 pointer">
+                <option>Select Mobile Company</option>
+                <option value="Apple">Apple</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Oppo">Oppo</option>
+                <option value="Vivo">Vivo</option>
+            </select>
+        </form>
+        <input onkeypress="handleKeyPress(event)" class="mb-1 form-control w-auto mx-2" type="text" placeholder="Enter Mobile Model" id="mobileModel" />
+        <button class="btn btn-outline-dark mx-1 mb-1" onclick="handleSearch()">Search</button>
+    </div>
+    <hr>
+    <div id="errorModal" class="modal-header flex-column">
+        <div class="icon-box">
+            <h2>!</h2>
+        </div>
+        <h4 class="modal-title w-100">Mobile Model Not Found!</h4>
+        <button type="button" class="btn btn-outline-info" onclick="removeModal()">View All Mobiles</button>	
+    </div>
+    <div id="category" class="d-flex justify-content-center">
+        <h5 class="px-2">Sort by Mobile Company:</h5>
+        <h5 onclick="openTab(event)" class="categoryTab active mx-1 text-info text-decoration-underline pointer">All</h5>
+        <h5 onclick="showCategory('Apple', event)" class="categoryTab mx-1 text-info text-decoration-underline pointer">Apple</h5>
+        <h5 onclick="showCategory('Samsung', event)" class="categoryTab mx-1 text-info text-decoration-underline pointer">Samsung</h5>
+        <h5 onclick="showCategory('Oppo', event)" class="categoryTab mx-1 text-info text-decoration-underline pointer">Oppo</h5>
+        <h5 onclick="showCategory('Vivo', event)" class="categoryTab mx-1 text-info text-decoration-underline pointer">Vivo</h5>
+    </div>
+    <div class="container d-flex flex-wrap mt-2 pb-5" id="mobiles">
+        <!-- Data Injected by JavaScript -->
+    </div>
+</body>
+
+</html>
